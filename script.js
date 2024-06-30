@@ -4,9 +4,9 @@ $(document).ready(function() {
         $(this).toggleClass('open');
       });
        // Cargar contenido inicial
-   /* $('#contenido-dinamico').load('inicio.html', function() {
+    $('#contenido-dinamico').load('inicio.html', function() {
         $(this).addClass('loaded'); // Aplicar clase loaded después de cargar el contenido inicial
-    });*/
+    });
 // Manejar clicks en los enlaces
 $('.cargar-contenido').click(function(e) {
     e.preventDefault(); // Evitar comportamiento por defecto del enlace

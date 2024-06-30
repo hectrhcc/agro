@@ -1,13 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => { 
    
-    //Script de Contacto
+    //js mapa
     const map = L.map('map').setView([-18.50019,-70.28407], 17);
+    map.scrollWheelZoom.disable();
+
+    function handleMapScroll(e) {
+
+        e.stopPropagation();
+        e.preventDefault();
+
+      const delta = e.wheelDelta ? e.wheelDelta : -e.detail;
+  
+        if (delta > 0) {
+            map.zoomIn();
+        } else {
+            map.zoomOut();
+        }
+    }
+
+    map.on('wheel', handleMapScroll);
+    map.on('mousewheel', handleMapScroll);
+    map.on('DOMMouseScroll', handleMapScroll);
       
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: ' <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-    
+    const marker = L.marker([-18.50019,-70.28407]).addTo(map);
+    const polygon = L.polygon([
+      [-18.50019,-70.28407],
+      [-18.50019,-70.28407],
+      [-18.50019,-70.28407]
+    ]).addTo(map);
+  
+    map.on('click', onMapClick);
+
+  //js contacto  
     let nombre = document.getElementById('nombre');
     let telefono = document.getElementById('telefono');
     let correo = document.getElementById('correo');

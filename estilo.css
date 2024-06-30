@@ -36,16 +36,16 @@
     display: flex;
     margin:1rem;
     justify-content: flex-start;
-    
+    z-index: 1;
   }
   .imglogo{
     width:13rem;
     height:auto;
-    z-index: 1;
+    z-index:1;
   }
   header{
     background-color: #fff;
-    z-index: 1;
+    z-index: 0;
   }
   .navegacion{
     display:none;
@@ -54,7 +54,7 @@
     width: 100%;
     top:10.2rem;
     padding-left: 1rem;
-    animation: aparecerDesdeAr 0.8s forwards;
+    animation: aparecerDesdeAr 2s forwards;
     z-index:0;
   }
   @keyframes emergeLogo {
@@ -208,17 +208,35 @@
   }
 
   .ul-footer{
-    display: none; /*en pantallas grandes 1*/
+    display: none; /*en pantallas grandes */
     list-style: none;
     text-align: left;
   }
 
   .a-footer{
     color:#fff;
+    text-decoration: none;
   }
   .a-footer:hover{
     color:cornflowerblue;
   }
+  /* Estilos para los enlaces sin color */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:disabled {
+  pointer-events: none;
+  text-decoration: none;
+}
   .rrss-footer{
     text-align: center;
   }
@@ -230,10 +248,29 @@
   .pueblos{
     display: none;
   }
+  .mapa{
+    height:87vh;
+    width: 100%;
+  }
+
   /*media querys*/
-
 @media (min-width:320px){
+  .menu-toggle {
+    top:1.7rem;
+    left:16.5rem;
+  }
+}
 
+@media (min-width:375px){
+  .imglogo{
+    position: relative;
+    bottom:1rem;
+    right:0.5rem;
+  }
+  .menu-toggle {
+    top:1.5rem;
+    left:19.5rem;
+  }
 }
 @media (min-width:390px){
   .menu-toggle {
@@ -245,7 +282,7 @@
     background-color:#79A53E;
   }
   footer{
-    margin-top: 2rem;
+
     padding-top: 1rem;
   }
   .pueblos{
@@ -266,10 +303,16 @@
   .ul-footer{
     margin-top: 0.5rem;
     padding: 1rem;
-    text-decoration: none;
+    list-style: none;
     display: block;
+    
+  }
+  .ul-footer li{
+    
+    text-decoration: none;
 
   }
+  
   .horario{
     margin-top: 1rem;
     padding: 1rem;
@@ -278,6 +321,11 @@
 }
 
 @media (min-width:1024px){
+  .imglogo{
+    position: relative;
+    top:0.1rem;
+    left:0.1rem;
+  }
   .navmovil{
     display: none;
   }
@@ -298,9 +346,16 @@
     justify-content: center;
   }
   .ul .li{
-    
-    color:#555;
+    font-weight: 700;
+    color:#444;
   }
+
+  .ul .li a {
+  text-decoration: none;
+}
+
+
+
   .ul .li:hover{
     color:#79A53E;
     cursor: pointer;
