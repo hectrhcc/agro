@@ -12,13 +12,33 @@
     <link rel="stylesheet" href="estilo.css" />
     <title>Agrícola del Norte S.A</title>
     <style>
+        
+
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+      /*align-items: center; contrae el div derecho de Entidad*/ 
+      padding-top: 1rem;
+      padding-bottom:1.5rem;
+      background-color: #fff;
+      
+      }
+      .cliente{
+    width:100%;
+    height:100%;
+    
+    display: inline;
+    margin-left: 0.2rem;
+    }
     .carousel {
        display: flex;
        overflow: hidden;
-       width:78.4rem;
-       height:97vh;
+       min-width:100%;
+       height:100%;
        position: relative;
        transition: transform 0.5s ease-in-out;
+       z-index:0;
     }
    .carousel-inner {
        display: flex;
@@ -139,36 +159,101 @@
 .close:focus {
 color: red;
 }
+.Sitios{
+    color:#79A53E;
+    
+}
+.logo1{
+    display: block;
+    width:6rem;
+    
+}
+.logo2{
+    display: block;
+    width:6.8rem;
+}
+.logo3{
+    display: block;
+    width:7.2rem;
+}
+.logo4{
+    display: block;
+    width:7rem;
+}
+.entidades{
+width:22%;
+
+display: block;
+margin: 0 auto;
+border:none;
+text-align: center;
+background-color: #f5f1f1;
+border-radius: 0.7rem;
+padding-top:0.8rem;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.diventidad{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width:1023px){
+    .container{
+        flex-direction: row;
+    }
+    .cliente{
+        width:82%;
+    }
+    .entidades{
+        width: 17%;
+        
+    }
+    .carousel {
+       display: flex;
+       overflow: hidden;
+       width:64.4rem;
+       height:100%;
+       position: relative;
+       transition: transform 0.8s ease-in-out;
+    }
+}
     </style>
 </head>
 <body>
-    <section  >
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item ">   
-                    <img src="./images/5.jpg" alt="Slide 1" class="slide1">
-                     </div>
-                <div class="carousel-item">
-                    
-                    <img src="./images/4.jpg" alt="Slide 2" class="slide1">
-                </div>
-                <div class="carousel-item">
-                    
-                    <img src="./images/19.jpg" alt="Slide 3" class="slide1">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/23.jpg" alt="Slide 4" class="slide1">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/20.jpg" alt="Slide 5" class="slide1">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/8.jpg" alt="Slide 1" class="slide1">
-                </div>
+    <section >
+        <div  class="container">
+            <div class="cliente">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item ">   
+                            <img src="./images/5.jpg" alt="Slide 1" class="slide1">
+                             </div>
+                        <div class="carousel-item">
+                            
+                            <img src="./images/4.jpg" alt="Slide 2" class="slide1">
+                        </div>
+                        <div class="carousel-item">
+                            
+                            <img src="./images/19.jpg" alt="Slide 3" class="slide1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/23.jpg" alt="Slide 4" class="slide1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/20.jpg" alt="Slide 5" class="slide1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/8.jpg" alt="Slide 1" class="slide1">
+                        </div>
+                    </div>
+                    </div>
             </div>
-            </div>
-
-</div> 
+        <div class="entidades"> <h1 class="Sitios">Sitios de interés</h1>
+            <div class="diventidad"><a href="https://www.conadi.gob.cl/" target="_blank" ><img src="./images/conadi.png" class="logo1"></a></div>
+            <div class="diventidad"><a href="https://www.sag.gob.cl/" target="_blank" ><img src="./images/sag.png" class="logo2"></a></div>
+            <div class="diventidad"><a href="https://www.indap.gob.cl/" target="_blank" ><img src="./images/indap.png" class="logo3"></a></div>
+            <div class="diventidad"><a href="https://minagri.gob.cl/region-de-arica-y-parinacota/" target="_blank"><img src="./images/agri.jpg" class="logo4"></a></div>
+        </div>  
+      </div> 
 </section>
 <section class=gallery id="galeria">
 <h1 class="">NUESTRAS ÁREAS DE TRABAJO</h1>
@@ -190,14 +275,7 @@ color: red;
             </div>
     </div>     
 </section>
-<section>
-<div class="entidades"> <h1 class="">Sitios de interés</h1>
-    <a href="https://www.conadi.gob.cl/" target="_blank"><img src="./images/conadi.png" class="logo1"></a>
-    <a href="https://www.sag.gob.cl/" target="_blank"><img src="./images/sag.png" class="logo2"></a>
-    <a href="https://www.indap.gob.cl/" target="_blank"><img src="./images/indap.png" class="logo3"></a>
-    <a href="https://minagri.gob.cl/region-de-arica-y-parinacota/" target="_blank"><img src="./images/agri.png" class="logo4"></a>
-</div>  
-</section>
+
 </body>
 </html>
 
