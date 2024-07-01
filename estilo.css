@@ -432,21 +432,26 @@ a:disabled {
   .contenedor-contacto{
     display: flex;
     flex-direction: row-reverse;
-    justify-content:space-around;
+    justify-content:space-between;
   }
   #contacto{
     padding-left:5rem;
+    text-align: center;
     }
   .formulario{
-border:1px solid red;
-    
+
+  padding-left:4rem;
+  padding-right: 0;
   }
   .mensajeinput{
     width: 20rem;
   }
+  .p2{
+    width:90.8%;
+  }
   .rangohorario{
-    border:1px solid red;
-    
+    width:40%;
+
   }
  
   .imglogo{
