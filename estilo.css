@@ -146,14 +146,15 @@
   }
   
   .seccion-contacto{
-    background-color: #fff;
+    color: #3D3D3D;
+    background-color:#E5D8C6;
   }
   .contenedor-contacto{
     display: flex;
     flex-direction: column;
-    color: #3D3D3D;
-    
-    background-color:#E5D8C6;
+  }
+  #contacto{
+    color:#50891A;    
   }
   .formulario{
     padding: 1rem;
@@ -203,8 +204,7 @@
     margin: 0.3rem 0.5rem 0.3rem 0.5rem;
   }
   .infoagro{
-    padding: 1rem;
-    margin: 0.3rem 0.5rem 1rem 0.5rem;
+    margin-top: 2rem;
   }
   .tituloinfo{
     color:#50891A;
@@ -329,12 +329,19 @@ a:disabled {
   top:0.12rem;
 } 
   /*media querys*/
-
+  .interaccion{
+    display: none;
+  }
 @media (min-width:320px){
+  #contacto{
+    padding: 1.3rem;
+    padding-bottom: 0.1rem;
+  }
   .menu-toggle {
     top:1.7rem;
     left:16.5rem;
   }
+  
 }
 
 @media (min-width:375px){
@@ -352,6 +359,7 @@ a:disabled {
   .menu-toggle {
     left:21.4rem;
   }
+  
 }
 @media (min-width:768px){
   body{
@@ -395,16 +403,52 @@ a:disabled {
   }
   .contenedor-contacto{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
+  #contacto{
+  padding-left:1.5rem;
+  
+  }
+    .formulario{
+      width:44%;
+    }
+    .interaccion{
+      display: block;
+      margin-bottom: 3rem;
+    }
+    .p1{
+      color: #79A53E;
+      font-size: x-large;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .p2{
+      color: #000;
+      font-size: medium;
+    }
 }
 
 @media (min-width:1024px){
   .contenedor-contacto{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    justify-content:space-around;
   }
+  #contacto{
+    padding-left:5rem;
+    }
+  .formulario{
+border:1px solid red;
+    
+  }
+  .mensajeinput{
+    width: 20rem;
+  }
+  .rangohorario{
+    border:1px solid red;
+    
+  }
+ 
   .imglogo{
     position: relative;
     top:0.1rem;
