@@ -65,23 +65,31 @@
             <div class="lg">
             <label class="nombrelabel" for="nombre">Nombre: <span class="asterisco">*</span>
             </label>
+            <div class="pp">
             <input id="nombre" name="nombre" placeholder=" Nombre" type="text " class="nombreinput" required>
             <p id="pf1" >Este campo es requerido</p>
+            </div>
             <label for="telefono" class="telefonolabel">Teléfono: <span class="asterisco">*</span>
             </label>
+            <div class="pp">
             <input id="telefono" name="telefono" placeholder=" 1234567890" type="number" class="telefonoinput" required>
             <p id="pf2">Este campo es requerido</p>
+            </div>
             </div>
             <div class="lg">
             <label for="correo" class="correolabel">E-mail: <span class="asterisco">*</span>
             </label>
+            <div class="pp2">
             <input name="correo" placeholder=" tucorreo@correo.com" id="correo" type="text" class="correoinput" required>
-            <p id="pf3">Por favor ingresar una dirección de correo válido</p>
+            <p id="pf3">Ingrese correo válido</p>
             <p id="pf4">Este campo es requerido</p>
+            </div>
             <label for="asunto" class="asuntolabel">Asunto: <span class="asterisco">*</span>
             </label>
+            <div class="pp3">
             <input id="asunto" name="asunto" placeholder=" Asunto" type="text" class="asuntoinput" required>
             <p id="pf5">Este campo es requerido</p>
+            </div>
             </div>
             <label for="mensaje" class="mensajelabel">Mensaje: <span class="asterisco">*</span>
             </label>
@@ -155,11 +163,12 @@
           emailjs.sendForm(serviceID, templateID, this)
             .then(function(response) {
               btn.value = 'Enviar';
-              alert('Mensaje enviado correctamente!');
+              alert('Mensaje enviado!\nGracias por completar el formulario. ¡Nos pondremos en contacto pronto!');
             }, function(error) {
               btn.value = 'Enviar';
               alert('Error al enviar el mensaje. Error: ' + JSON.stringify(error));
             });
+            // Validación de campos aquí...
         });
       </script>
 </body>

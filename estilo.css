@@ -476,7 +476,7 @@ a:disabled {
   .rangohorario{
    text-align: center;
   }
-
+  
   .nombrelabel, .telefonolabel {
     margin-right: 0.5rem;
   }
@@ -493,12 +493,10 @@ a:disabled {
     margin-left: 1rem;
   }
   .correoinput, .asuntoinput{
-    display: inline;
     width:18rem;
-    margin-left: 0.7rem;
 }
 .asuntoinput{
-  margin-left: 0.5rem;
+  margin-right: 0rem;
 }
 .mensajelabel{
   margin-top: 1rem;
@@ -511,6 +509,25 @@ a:disabled {
     display: flex;
     flex-direction: row;
   }
+  .pp{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    
+  }
+  .pp2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    margin-left:0.7rem;
+  }
+  .pp3{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    margin-left:0.5rem;
+  }
+  
   .botonform{
     margin: 0 auto;
   }

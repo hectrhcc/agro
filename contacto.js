@@ -32,8 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       [-18.50019,-70.28407],
       [-18.50019,-70.28407]
     ]).addTo(map);
-  
-    map.on('click', onMapClick);
+    
 
   //js contacto  
     let nombre = document.getElementById('nombre');
@@ -58,12 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function showErrorText() {
-    
     p3.style.display = 'block';
     }
     
     function hideErrorText() {
-    
     p3.style.display = 'none'; 
     }
     
@@ -100,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     
     correo.addEventListener('blur', ()=>{
-    
     if(correo.value.trim()===''){
     p4.style.display='block';
     }else{
