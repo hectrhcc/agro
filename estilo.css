@@ -77,7 +77,7 @@
   }
   .menu-toggle {
     height: 1rem;
-    position: relative;
+    position: absolute;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -87,11 +87,10 @@
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-    left:18rem;
-    top:2rem;
+    right:2rem;
     width:2rem;
     z-index:2;
-    position: fixed;
+    
   }
   .menu-toggle:hover {
     color: fff;
@@ -104,7 +103,7 @@
     position: absolute;
     height:0.35rem;
     width:2.6rem;
-    right:0;
+    
     background:#222;
     border-radius: 2px;
     -webkit-transform: rotate(0deg);
