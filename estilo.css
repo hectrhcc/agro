@@ -179,13 +179,13 @@
     margin-bottom: 0.4rem;
     padding: 0.3rem;
     outline: none;
-    width: 21rem;
+    width: 17rem;
   }
   .nombreinput:hover, .telefonoinput:hover , .correoinput:hover , .asuntoinput:hover , .mensajeinput:hover { 
   outline:1px solid #79A53E ;
 }
   .mensajeinput{
-    width: 21rem;
+    width: 17rem;
     height: 10rem;
   }
   .botonform{
@@ -383,6 +383,9 @@ a:disabled {
   }
   .rangohorario{ 
     height:5.5rem;
+  }
+  .nombreinput, .telefonoinput, .correoinput, .asuntoinput, .mensajeinput{
+    width: 20rem;
   }
 }
 @media (min-width:390px){
