@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
 //Hamburguesa para la version movil              
 let navegacion=document.getElementById('navegacion');
 let hamburguesa = document.getElementById('hamburguesa');
-console.log(navegacion);
 
 hamburguesa.addEventListener('click', ()=>{
     if(navegacion.style.display===''){

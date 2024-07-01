@@ -53,43 +53,41 @@
 
 <section class="seccion-contacto">
     <div class="contenedor-contacto">    
-        <div class="contenedor">
-            <h1 class="id="contacto">CONTACTO</h1>
-            <div class="contacto">
+        <div class="formulario">
+            <h1 class="id="contacto">CONTACTO</h1>           
             <form id="form">
-            <label class=" " for="nombre">Nombre <span class="">*</span>
+            <label class="nombrelabel" for="nombre">Nombre: <span class="asterisco">*</span>
             </label>
-            <input id="nombre" name="nombre" placeholder=" Nombre" type="text " class="nombre" required>
-            <p id="pf1" class="">Este campo es requerido</p>
-            <label for="telefono" class="">Teléfono <span class="">*</span>
+            <input id="nombre" name="nombre" placeholder=" Nombre" type="text " class="nombreinput" required>
+            <p id="pf1" >Este campo es requerido</p>
+            <label for="telefono" class="telefonolabel">Teléfono: <span class="asterisco">*</span>
             </label>
-            <input id="telefono" name="telefono" placeholder=" 1234567890" type="number" class="telefono " required>
-            <p id="pf2" class="">Este campo es requerido</p>
-            <label for="correo" class="">E-mail <span class="">*</span>
+            <input id="telefono" name="telefono" placeholder=" 1234567890" type="number" class="telefonoinput" required>
+            <p id="pf2">Este campo es requerido</p>
+            <label for="correo" class="correolabel">E-mail: <span class="asterisco">*</span>
             </label>
-            <input name="correo" placeholder=" tucorreo@correo.com" id="correo" type="text" class="correo " required>
-            <p id="pf3" class="">Por favor ingresar una dirección de correo válido</p>
-            <p id="pf4" class="">Este campo es requerido</p>
-            <label for="asunto" class=" ">Asunto <span class="">*</span>
+            <input name="correo" placeholder=" tucorreo@correo.com" id="correo" type="text" class="correoinput" required>
+            <p id="pf3">Por favor ingresar una dirección de correo válido</p>
+            <p id="pf4">Este campo es requerido</p>
+            <label for="asunto" class="asuntolabel">Asunto: <span class="asterisco">*</span>
             </label>
-            <input id="asunto" name="asunto" placeholder=" Asunto" type="text" class="asunto " required>
-            <p id="pf5" class="">Este campo es requerido</p>
-            <label for="mensaje" class="">Mensaje <span class="">*</span>
+            <input id="asunto" name="asunto" placeholder=" Asunto" type="text" class="asuntoinput" required>
+            <p id="pf5">Este campo es requerido</p>
+            <label for="mensaje" class="mensajelabel">Mensaje: <span class="asterisco">*</span>
             </label>
-            <textarea id="mensaje" name="mensaje" placeholder=" escribe aquí tu mensaje..." class="msj " required></textarea>
-            <p id="pf6" class="">Este campo es requerido</p>
+            <textarea id="mensaje" name="mensaje" placeholder=" escribe aquí tu mensaje..." class="mensajeinput" required></textarea>
+            <p id="pf6">Este campo es requerido</p>
             <input id="button" type="submit" value="Enviar" class="botonform"/>
-            </form>
-            </div>
-        </div>    
-        <div >
-            <h3>Horario de atención:</h3>
+            </form>     
+        </div> 
+        <div class="rangohorario">
+            <h3 class="tituloinfo">Horario de atención:</h3>
             <p>Lunes a Domingo:</p>
             <p>Mañana/tarde de 07:00 a 18:00</p>
             <p>Ventas: 58-2-220525 </p>
-        </div>  
-        <div>
-            <span class="titulo-footer">AGRÍCOLA DEL NORTE S.A</span>
+       </div>  
+       <div class="infoagro">
+            <h3 class="tituloinfo">AGRÍCOLA DEL NORTE S.A</h3>
             <ul >
             <li> RUT:96.572.750-7</li>
             <li> VENTA DE INSUMOS AGRÍCOLAS</li>
@@ -97,7 +95,9 @@
             <li> COMERCIALIZADORA  DE PRODUCTOS  AGRÍCOLAS.</li>
             <li> CENTRO DE TRANSFERENCIA INTERNAC.</li>
             <li> ESTACIONAMIENTO.</li>
-        </ul></div> 
+        </ul>
+       </div> 
+    <div >
     </section>
 <section>
     <div id="map" class="mapa" ></div>
