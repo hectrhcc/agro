@@ -90,7 +90,7 @@
     left:18rem;
     top:2rem;
     width:2rem;
-    z-index: 0;
+    z-index:2;
     position: fixed;
   }
   .menu-toggle:hover {
@@ -213,13 +213,16 @@
     list-style: none;
     text-align: left;
   }
-
+  .ul-footer li .a-footer{
+    text-decoration: none;
+  }
   .a-footer{
     color:#fff;
     text-decoration: none;
   }
   .a-footer:hover{
     color:cornflowerblue;
+    
   }
   /* Estilos para los enlaces sin color */
 a {
@@ -253,8 +256,17 @@ a:disabled {
     height:87vh;
     width: 100%;
   }
-
-  
+.inifoot, .histfoot ,.objfoot ,.prodfoot ,.contactofoot ,.bodegafoot {
+  width: 15px;
+  position: relative;
+  top:0.2rem;
+}
+.redfoot{
+  width: 12px;
+  position: relative;
+  margin-right:0.2rem;
+  top:0.12rem;
+} 
   /*media querys*/
 @media (min-width:320px){
   .menu-toggle {
