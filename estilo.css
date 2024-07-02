@@ -14,7 +14,7 @@
   }
   body{
     font-family: 'Karla', sans-serif;
-    
+    overflow-x: hidden;
   }
   /* Estilo para la barra de desplazamiento en navegadores webkit (Chrome, Safari, etc.) */
   ::-webkit-scrollbar {
@@ -361,7 +361,7 @@ a:disabled {
 } 
 #bodega{
   padding: 1rem;
-  background-color: #E2E2E2;
+  background-color: #fff;
 }
   /*media querys*/
 
@@ -508,7 +508,7 @@ justify-content: center;
 .gallery{
 background:#fff;
 padding-top:0.5rem;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
 padding-bottom:2rem ;
 }
 .contenedor-galeria{
@@ -525,7 +525,7 @@ width: 18.75rem; /* 18.75 rem = 300 px */
 height: 12.5rem; /* 12.5 rem = 200 px */
 display: block;
 margin-bottom: 0.7rem; 
-box-shadow: 0 0 6px rgba(0,0,0,.5);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .titulos-galeria{
@@ -738,16 +738,16 @@ right:0.rem;
 
 @media (min-width:1024px){
   #inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{
-  scroll-margin-top:8rem;
+  scroll-margin-top:9rem;
   }
   header{
     position: fixed;
-    min-width: 101%;
-    height:7.8rem;
+    min-width: 100%;
+    height:8.8rem;
   }
   .logo{
     position: relative;
-    top:-1.3rem;
+    top:-0.3rem;
     
   }
   .imglogo{
@@ -884,6 +884,7 @@ right:0.rem;
     flex-direction: row;
     justify-content:space-evenly;
     flex-wrap: nowrap;
+    
     }
     .img-galeria{
     width:20rem;
