@@ -224,8 +224,16 @@
     margin-bottom:1rem;
     text-align: center;
   }
+  .postitulo{
+    font-size:large;
+    color:#50891A;
+    margin-top: 2rem;
+    margin-bottom:1rem;
+    text-align: center;
+  }
   .titulo2{
-    font-size: larger;
+    font-size: smaller;
+    
   }
   .parrafo{
     text-align: justify;
@@ -352,7 +360,7 @@ a:disabled {
 } 
 #bodega{
   padding: 1rem;
-  background-color: #fff;
+  background-color: #E2E2E2;
 }
   /*media querys*/
 
@@ -630,8 +638,15 @@ right:0.rem;
    justify-content: space-evenly;
   
   }
-  #contacto{
+  #contacto, .titulo{
   font-size:xx-large;
+}
+.postitulo{
+  font-size:x-large;
+  color:#50891A;
+  margin-top: 2rem;
+  margin-bottom:1rem;
+  text-align: center;
 }
   .menu-toggle {
   left:44rem;
@@ -729,13 +744,41 @@ right:0.rem;
     margin: 1.5rem auto;
     width: 70%;
   }
+  .titulo2{
+    font-size: larger;
+  }
 }
 
 @media (min-width:1024px){
+  #inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{
+  scroll-margin-top:8rem;
+  }
+  header{
+    position: fixed;
+    min-width: 101%;
+    height:7.8rem;
+  }
+  .logo{
+    position: relative;
+    top:-1.3rem;
+    
+  }
+  .imglogo{
+    height:8rem;
+    width:13rem;
+  }
+  nav{
+    min-width: 100%;
+    height:7.8rem;
+  }
+  .ul{
+    
+    position: relative;
+    top:0.5rem;
+  }
   .contenedor-contacto{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
   }
   #contacto{
     text-align: center;
@@ -864,6 +907,27 @@ right:0.rem;
 }
 .logo1 , .logo2, .logo4 , .logo3 {
 margin-right: 3.5rem;
+}
+.parrafo{
+  font-size: x-large;
+}
+.titulo{
+  font-size: 250%;
+}
+.postitulo{
+  font-size: 190%;
+}
+.p1 {
+  font-size: x-large;
+}
+.p2{
+  font-size: large;
+}
+.imgbodega{
+  width: 58rem;
+}
+.titulo2{
+  font-size: x-large;
 }
 }
 
