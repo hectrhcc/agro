@@ -14,7 +14,7 @@
   }
   body{
     font-family: 'Karla', sans-serif;
-    overflow-x: hidden;
+    
   }
   /* Estilo para la barra de desplazamiento en navegadores webkit (Chrome, Safari, etc.) */
   ::-webkit-scrollbar {
@@ -44,6 +44,7 @@
     height:auto;
     z-index:2;
   }
+
   header{
     background-color: #fff;
     z-index:2;
@@ -61,7 +62,7 @@
   }
   @keyframes emergeLogo {
     0% {
-       transform: translateY(60%);
+       transform: translateY(-60%);
     }
     100% {  
        transform: translateY(0);
@@ -537,23 +538,6 @@ bottom:0.6rem;
 right:0.rem;
 }
 
-.imagenes {
-  view-timeline-name: --title;
-  animation-timeline: --title;
-  animation-name:  aparecerDesdeIzq;
-  animation-range: entry 0% cover 30%;
-  animation-fill-mode: both;
-  animation-direction:forwards;
-  width:20rem;
-  }
-  @keyframes aparecerDesdeIzq {
-  from {
-  transform: translateX(-50%); 
-  }   
-  to {
-  transform: translateX(0);
-  }
-  }
 
   .imgbodega{
     width:25rem;
@@ -899,8 +883,8 @@ right:0.rem;
     flex-wrap: nowrap;
     }
     .img-galeria{
-    width:21rem;
-    height: 12rem;
+    width:20rem;
+    height:12rem;
     }
     .Sitios{
  font-size: xx-large;
@@ -928,6 +912,55 @@ margin-right: 3.5rem;
 }
 .titulo2{
   font-size: x-large;
+}
+.listacontenedor{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom:2rem;
+}
+.lista1{
+width: 43%;
+}
+.lista2{
+  width: 43%;
+}
+@keyframes aparecerDesdeIzq {
+  from {
+  transform: translateX(-50%); 
+  }   
+  to {
+  transform: translateX(36%);
+  }
+  }
+.efecto1{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content:stretch;
+  
+}
+.divefecto1{
+  width:33%;
+  position: relative;
+  right:1rem;
+  
+}
+.divimagen{
+  position: relative;
+  left:9.8rem;
+  width:40%;
+  
+}
+.divimagen2{
+  margin:0 auto;
+  width:40%;
+}
+.fin{
+  position: relative;
+  top:1rem;
 }
 }
 
