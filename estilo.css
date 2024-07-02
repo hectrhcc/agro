@@ -409,6 +409,7 @@ a:disabled {
  overflow: hidden;
 }
 
+
 @keyframes carousel-animation {
  0% {
      transform: translateX(0);
@@ -459,6 +460,7 @@ a:disabled {
 }
 .slide1{
   width:100%;
+  
 }
 
 
