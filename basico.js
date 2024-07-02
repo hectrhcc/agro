@@ -15,4 +15,6 @@ hamburguesa.addEventListener('click', ()=>{
 let logo = document.querySelector('.imglogo');
 logo.style.animation = 'emergeLogo 2.5s forwards'; 
 
+
+
 });
