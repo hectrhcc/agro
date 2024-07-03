@@ -411,7 +411,7 @@ margin-bottom: 1.5rem;
 }
 .logo4{
 display: inline;
-width:7rem;
+width:6.6rem;
 padding-bottom: 2rem;
 }
 
@@ -447,8 +447,8 @@ gap:0.8rem;
 }
 .img-galeria{
 object-fit: cover; 
-width: 18.75rem; /* 18.75 rem = 300 px */
-height: 12.5rem; /* 12.5 rem = 200 px */
+width: 18.75rem; 
+height: 12.5rem; 
 display: block;
 margin-bottom: 0.7rem; 
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -766,7 +766,7 @@ right:0.rem;
       
    }
    .logo4{
-      margin-left:0.7rem;
+      margin-left:1rem;
       position: relative;
       top:-0.5rem;
    }
@@ -794,16 +794,7 @@ right:0.rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1280px){
-  .contenedor-galeria{
-    justify-content:space-around;
-    flex-wrap: nowrap;
-    width:100%;
-    margin:0 auto;
-    position: relative;
-    right:6%;
-    }
-}
+
 
 @media (min-width:1024px){
   #inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{
@@ -830,6 +821,7 @@ top:57%;
     top:-0.3rem;
     
   }
+ 
   .imglogo{
     height:8rem;
     width:13rem;
@@ -962,19 +954,35 @@ top:57%;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+    align-items: center;
     flex-wrap: nowrap;
-    width: 50%;
+    width:50%;  
     margin:0 auto;
     }
     .img-galeria{
-    width:20rem;
-    height:12rem;
-    }
+      object-fit: cover; 
+      max-width: 11.75rem; 
+      max-height: 10.5rem; 
+      display: block;
+      margin-bottom: 1rem; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      }
+    
     .Sitios{
  font-size: x-large;
 }
-.logo1 , .logo2, .logo4 , .logo3 {
-margin-right: 3.5rem;
+.entidades{
+
+  margin: 0 auto;
+   }
+.logo1 , .logo2, .logo3 {
+margin-right:2.2rem;
+}
+.logo4{
+  width:7.5rem;
+  position: relative;
+  top:-0.5rem;
+  right:0.5rem;
 }
 .parrafo{
   font-size: large;
@@ -993,7 +1001,7 @@ margin-right: 3.5rem;
   font-size: large;
 }
 .imgbodega{
-  width: 58rem;
+  width: 50rem;
 }
 .titulo2{
   font-size: x-large;
@@ -1016,7 +1024,6 @@ width: 43%;
   width:28rem;
 }
 
-
 .img-galeria{
   width:16rem;
   height:9rem;
@@ -1026,25 +1033,10 @@ width: 43%;
     margin: 0 auto;
   }
 
+
 }
 
-@media (min-width:1280px) and (max-width:1440px){
-  .contenedor-galeria{
-    justify-content:space-around;
-    flex-wrap: nowrap;
-    width:50%;
-    margin:0 auto;
-    position: relative;
-    right:6%;
-    
-    }
-}
 
-@media (min-width:1440px) {
-  .contenedor-galeria{
-    justify-content:space-around;
-    flex-wrap: nowrap;
-    width:50%;
-    margin:0 auto;
-    }
-}
+
+
+
