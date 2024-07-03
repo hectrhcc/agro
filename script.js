@@ -7,7 +7,7 @@ $(document).ready(function() {
     $('#contenido-dinamico').load('inicio.html', function() {
         $(this).addClass('loaded'); 
     });
-// Manejar clicks en los enlaces
+// Manejar clicks en los enlaces (ya no va porque todas las subpaginas ahora son secciones)
 /*
 $('.cargar-contenido').click(function(e) {
     e.preventDefault(); 
@@ -20,4 +20,5 @@ $('.cargar-contenido').click(function(e) {
     return false;
 });
 */
+
 });

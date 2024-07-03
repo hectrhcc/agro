@@ -383,85 +383,7 @@ a:disabled {
   }
 
 /*Inicio*/
-.cliente{
-  width:100%;
-  height:100%;
-  display: inline;
-  margin-left: 0.2rem;
-}
-.carousel {
- display: flex;
- overflow: hidden;
- min-width:100%;
- height:100%;
- position: relative;
- transition: transform 0.5s ease-in-out;
- z-index:0;
-}
-.carousel-inner {
- display: flex;
- animation: carousel-animation 18s infinite;
-}
 
-.carousel-item {
- width: 100%;
- flex-shrink: 0;
- overflow: hidden;
-}
-
-
-@keyframes carousel-animation {
- 0% {
-     transform: translateX(0);
-     transition: transform 1.5s ease-in-out;
- }
- 16.666% {
-     transform: translateX(0);
-     transition: transform 1.5s ease-in-out;
- }
- 20% {
-     transform: translateX(-100%);
-     transition: transform 1.5s ease-in-out;
- }
- 36.666% {
-     transform: translateX(-100%);
-     transition: transform 1.5s ease-in-out;
- }
- 40% {
-     transform: translateX(-200%);
-     transition: transform 1.5s ease-in-out;
- }
- 56.666% {
-     transform: translateX(-200%);
-     transition: transform 1.5s ease-in-out;
- }
- 60% {
-     transform: translateX(-300%);
-     transition: transform 1.5s ease-in-out;
- }
- 76.666% {
-     transform: translateX(-300%);
-     transition: transform 1.5s ease-in-out;
- }
- 80% { 
-     transform: translateX(-400%);
-     transition: transform 1.5s ease-in-out;
-   }
-
- 95% {
-     transform: translateX(-400%);
-     transition: transform 1.5s ease-in-out;
- }
-
- 100% {
-     transform: translateX(-500%);
-     transition: transform 1.5s ease-in-out;
- }
-}
-.slide1{
-  width:100%;
-  
-}
 
 
 
@@ -556,12 +478,144 @@ right:0.rem;
   }
   #objetivos{
     padding: 1rem;
-    background-color: #E2E2E2;
+    background-color: #F5F1F1;
   }
   #productosyservicios{
     padding: 1rem;
-    background-color: #E2E2E2;
+    background-color: #F5F1F1;
   }
+
+  .slide {
+    position: relative;
+    margin-top: 0px;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    margin: 0 auto;
+    height:100%;
+    
+}
+
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index:1;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4, 
+#slide-5:checked ~ .control-5
+{
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+.slide-circulo {
+    color: beige;
+    cursor: pointer;
+    display: block;
+    font-size: 3rem;
+    
+}
+
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4:checked ~ .control-4 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo,
+#slide-5:checked ~ .control-5 ~ .slide-indicador 
+      li:nth-child(5) .slide-circulo
+{
+    color: #428bca;
+}
+
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+}
 @media (min-width:320px){
   #contacto{
     padding: 1.3rem;
@@ -738,10 +792,31 @@ right:0.rem;
   }
 }
 
+@media (min-width:1024px) and (max-width:1280px){
+  .contenedor-galeria{
+    justify-content:space-around;
+    flex-wrap: nowrap;
+    width:100%;
+    margin:0 auto;
+    position: relative;
+    right:6%;
+    }
+}
 @media (min-width:1024px){
   #inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{
   scroll-margin-top:9rem;
   }
+  .slide-inner {
+    position: relative;
+    overflow: hidden;
+    width:50%;
+    margin: 0 auto;
+    height:100%;
+    padding-top:8rem;
+}
+.slide-control {
+top:57%;
+}
   header{
     position: fixed;
     min-width: 100%;
@@ -832,11 +907,10 @@ right:0.rem;
     margin-bottom: 0.5rem;
     margin-left:0.5rem;
   }
-  
+ 
   .botonform{
     margin: 0 auto;
   }
- 
   .imglogo{
     position: relative;
     top:0.1rem;
@@ -884,9 +958,10 @@ right:0.rem;
   .contenedor-galeria{
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:space-around;
     flex-wrap: nowrap;
-    
+    width: 50%;
+    margin:0 auto;
     }
     .img-galeria{
     width:20rem;
@@ -899,13 +974,14 @@ right:0.rem;
 margin-right: 3.5rem;
 }
 .parrafo{
-  font-size: x-large;
+  font-size: large;
+  width: 50%;
 }
 .titulo{
-  font-size: 250%;
+  font-size: 190%;
 }
 .postitulo{
-  font-size: 190%;
+  font-size: 140%;
 }
 .p1 {
   font-size: x-large;
@@ -934,41 +1010,18 @@ width: 43%;
   width: 43%;
 }
 .imagenes {
-  width:38rem;
+  width:28rem;
 }
 
-}
 
-@media (min-width:1280px){
-  .container{
-      flex-direction: row;
+.img-galeria{
+  width:16rem;
+  height:9rem;
   }
-  .img-galeria{
-  width:26rem;
-  height: 15rem;
+  .listacontenedor{
+    width: 60%;
+    margin: 0 auto;
   }
-  .cliente{
-      width:82%;
-  }
-  .entidades{
-      width: 100%;
-  }
-  .contenedor-galeria{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-  flex-wrap: nowrap;
-  }
-  .carousel {
-     display: flex;
-     overflow: hidden;
-     width:64.4rem;
-     height:100%;
-     position: relative;
-     transition: transform 0.8s ease-in-out;
-  }
- 
-  
 
 }
 
