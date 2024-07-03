@@ -183,9 +183,11 @@
     padding: 0.3rem;
     outline: none;
     width: 17rem;
+    box-shadow:1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   }
   .nombreinput:hover, .telefonoinput:hover , .correoinput:hover , .asuntoinput:hover , .mensajeinput:hover { 
   outline:1px solid #79A53E ;
+  
 }
   .mensajeinput{
     width: 17rem;
@@ -802,6 +804,7 @@ right:0.rem;
     right:6%;
     }
 }
+
 @media (min-width:1024px){
   #inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{
   scroll-margin-top:9rem;
@@ -864,7 +867,7 @@ top:57%;
     margin-left: 1rem;
   }
   .nombreinput, .telefonoinput {
-      width:18rem;
+      width:13rem;
   }
   .correolabel, .asuntolabel {
     margin-right: 0.5rem;
@@ -873,7 +876,7 @@ top:57%;
     margin-left: 1rem;
   }
   .correoinput, .asuntoinput{
-    width:18rem;
+    width:13rem;
 }
 .asuntoinput{
   margin-right: 0rem;
@@ -883,7 +886,7 @@ top:57%;
   margin-bottom: 1rem;
 }
   .mensajeinput{
-    width:50rem;
+    width:37rem;
   }
   .lg{
     display: flex;
@@ -968,7 +971,7 @@ top:57%;
     height:12rem;
     }
     .Sitios{
- font-size: xx-large;
+ font-size: x-large;
 }
 .logo1 , .logo2, .logo4 , .logo3 {
 margin-right: 3.5rem;
@@ -1025,3 +1028,23 @@ width: 43%;
 
 }
 
+@media (min-width:1280px) and (max-width:1440px){
+  .contenedor-galeria{
+    justify-content:space-around;
+    flex-wrap: nowrap;
+    width:50%;
+    margin:0 auto;
+    position: relative;
+    right:6%;
+    
+    }
+}
+
+@media (min-width:1440px) {
+  .contenedor-galeria{
+    justify-content:space-around;
+    flex-wrap: nowrap;
+    width:50%;
+    margin:0 auto;
+    }
+}
