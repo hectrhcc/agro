@@ -803,7 +803,7 @@ right:0.rem;
   .slide-inner {
     position: relative;
     overflow: hidden;
-    width:50%;
+    width:100%;
     margin: 0 auto;
     height:100%;
     padding-top:8rem;
