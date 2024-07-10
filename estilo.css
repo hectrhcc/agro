@@ -662,13 +662,13 @@ right:0.rem;
 #inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{ 
   animation: scrollAnimation 5s ease;
 }
-@media (min-width:320px){
+@media (min-width:300px){
 #contacto{
   padding: 1.3rem;
   padding-bottom: 0.1rem;
 }
 .menu-toggle {
-  top:1.7rem;
+  top:2.7rem;
   left:16.5rem;
 }
 .p1{
@@ -685,6 +685,10 @@ right:0.rem;
 }
 .imagenes {
   width:18rem;
+}
+.logo{
+  position: relative;
+  top:1rem;
 }
 
 }
@@ -712,7 +716,7 @@ right:0.rem;
 }
 @media (min-width:390px){
 .menu-toggle {
-  left:21.4rem;
+  left:21rem;
 }
 
 }
@@ -754,6 +758,7 @@ text-align: center;
 }
 .menu-toggle {
 left:44rem;
+
 }
 .ul-footer{
   margin-top: 0.5rem;
@@ -905,7 +910,7 @@ header{
 }
 .logo{
   position: relative;
-  top:-0.3rem;
+  top:-0.7rem;
   left:5rem;
 }
 
