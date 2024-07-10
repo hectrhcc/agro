@@ -28,6 +28,7 @@ background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
 ::-webkit-scrollbar-thumb {
 background: linear-gradient(transparent,#79A53E );
 border-radius:4rem;
+height:8rem;
 }
 .supertitulo{
   margin-top:2rem;
@@ -404,7 +405,7 @@ top:0.12rem;
 padding: 1rem;
 background-color: #fff;
 }
-/*media querys*/
+
 
 .interaccion{
   display: block;
@@ -662,6 +663,29 @@ right:0.rem;
 #inicio , #historia , #objetivos, #productosyservicios , #contacto, #bodega{ 
   animation: scrollAnimation 5s ease;
 }
+@keyframes efecto {
+  from {
+    opacity: 0;
+    scale: 20%;
+  }
+  
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+  }
+
+  .efectoimg{
+    view-timeline-name: --efectoimg;
+    animation-timeline: --efectoimg;
+    view-timeline-axis: block;
+    animation-name: efecto;
+    animation-range: entry 0% cover 20%;
+    animation-fill-mode: both;
+    animation-direction:forwards;
+    }
+
+/*media querys*/
 @media (min-width:300px){
 #contacto{
   padding: 1.3rem;
