@@ -1146,12 +1146,12 @@ height:9rem;
  position: relative;
  left:2.5rem;
 }
-slide-inner {
+.slide-inner {
   position: relative;
   overflow: hidden;
   width:100%;
   margin: 0 auto;
-  max-height:92vh;
+  max-height:100vh;
 }
 }
 
