@@ -556,7 +556,7 @@ right:0.rem;
   display: block;
   height: auto;
   max-width: 100%;
-  object-fit: cover;
+  
 }
 
 .slide-control {
@@ -876,7 +876,7 @@ scroll-margin-top:9rem;
   overflow: hidden;
   width:100%;
   margin: 0 auto;
-  height:77vh;
+  max-height:162vh;
   padding-top:8rem;
   overflow: hidden; 
 }
@@ -884,6 +884,8 @@ scroll-margin-top:9rem;
 display: flex;
 align-items: center;
 justify-content: center;
+object-fit: cover;
+object-position: top;
 }
 .slide-item {
 width: 100%;
@@ -891,6 +893,7 @@ height: 100%;
 }
 .slide-item img {
 clip-path: inset(0 0.1% 0 0.1%); 
+
 }
 .slide-control {
 top:57%;
@@ -1143,6 +1146,13 @@ height:9rem;
  position: relative;
  left:2.5rem;
 }
+slide-inner {
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  margin: 0 auto;
+  max-height:92vh;
+}
 }
 
 @media (min-width:1600px){
@@ -1156,9 +1166,7 @@ left:12rem;
   position: relative;
   left:22rem;
 }
-.slide-inner {
-height: 73vh;
-}
+
 }
 
 
